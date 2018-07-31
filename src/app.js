@@ -1,14 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/styles.sass';
+import React from "react";
+import ReactDOM from "react-dom";
+import AppRouter from "./routers/AppRouters";
+import "normalize.css/normalize.css";
+import "./styles/styles.sass";
 
-const Simple = () => {
-  return (
-    <div>
-      <h1>This is JSX!!!</h1>
-    </div>
-  )
-};
-console.log('this is working');
+console.log("this is working");
 
-ReactDOM.render(<Simple/>, document.getElementById('app'));
+ReactDOM.render(<AppRouter />, document.getElementById("app"));
